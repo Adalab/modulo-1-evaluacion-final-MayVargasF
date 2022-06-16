@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/e653573ea4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
   <title>Open Spaces</title>
 </head>
@@ -14,13 +17,19 @@
   <header class="index-header" id="header">
 
       <div class="index-header__menu">
-          <i class="fa-solid fa-bars"></i>
+
+          <a class="index-header__menu--icon"   href="https://adalab.es/" target="_blank" ><i class="fa-solid fa-bars"></i></a>
+
           <img src="./assets/images/logo.png" alt="Logo Open Spaces">
+
       </div>
 
       <div class="index-header__slogan">
-          <h1>disfruta creando espacios</h1>
-          <a href="#">compra ahora</a>
+
+          <h1 class="index-header__slogan--title">Disfruta creando espacios</h1>
+          <a href="#" 
+          class="index-header__slogan--button">Comprar Ahora</a>
+          
       </div>
 
   </header>
@@ -29,23 +38,25 @@
 
     <section class="benefits">
 
-        <h2>Volverse organizado se siente mejor con OPEN SPACES</h2>
+        <div class="benefits__wrapper">
+          <h2 class="benefits__wrapper--title">Volverse organizado se siente mejor con OPEN SPACES</h2>
+        </div>
 
-        <article class="benefits__benefit">
+        <article class="benefits__icon1">
             <img src="./assets/images/icon_1.png" alt="Pictograma de mesa con plantas">
-            <h3>Lo que necesitas</h3>
+            <h4>Lo que necesitas</h4>
             <p>Una linea de productos diseñados para todos tus espacios</p>
         </article>
 
-       <article class="benefits__benefit">
+       <article class="benefits__icon2">
            <img src="./assets/images/icon_2.png" alt="Pictograma de reciclaje">
-           <h3>Materias primas sustentables</h3>
+           <h4>Materias primas sustentables</h4>
            <p>Todos los productos con mateias primas sustentables</p>
        </article>
 
-      <article class="benefits__benefit">
+      <article class="benefits__icon3">
           <img src="./assets/images/icon_3.png" alt="Pictograma de cartel de indicaciones">
-          <h3>Guía</h3>
+          <h4>Guía</h4>
           <p>Soporte y asesoramiento para ayudarte con tu objetivo</p>
       </article>
 
@@ -54,20 +65,20 @@
 
     <section class="delivery">
 
-        <article class="benefits__benefit">
+        <article class="delivery__icon4">
             <img src="./assets/images/icon_4.png" alt="Pictograma de camión de transporte">
-            <h3>Envío gratis garantizado</h3>
+            <h4>Envío gratis garantizado</h4>
             <p>Envío gratis en compras desde 100</p>
         </article>
 
-        <a href="#">Comprar ahora</a>
+        <a class="delivery__button" href="#">Comprar ahora</a>
 
     </section>
 
     <section class="shop">
 
         <div>
-            <h4>Disfruta creando espacios</h4>
+            <h2>Disfruta creando espacios</h2>
             <p>Una línea de productos diseñados para todos tus espacios</p>
             <a href="#">Comprar ahora</a>
         </div>
@@ -83,7 +94,7 @@
 
      
       <div>
-          <h5>Tienda</h5>
+          <h4>Tienda</h4>
           <nav>
               <ul>
                   <li><a href="https://adalab.es/" target="_blank">Productos</a></li>
@@ -95,7 +106,7 @@
       </div>
 
       <div>
-          <h5>Nosotros</h5>
+          <h4>Nosotros</h4>
           <nav>
               <ul>
                   <li><a href="https://adalab.es/" target="_blank">Nuestra guía</a></li>
@@ -107,7 +118,7 @@
       </div>
 
       <div>
-          <h5>Contacto</h5>
+          <h4>Contacto</h4>
           <nav>
               <ul>
 

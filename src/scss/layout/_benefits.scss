@@ -1,0 +1,80 @@
+.benefits {
+  height: 1108px;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    ". icon1 ."
+    ". icon2 ."
+    ". icon3 .";
+  grid-template-rows: 13% 1fr 1fr 1fr;
+  grid-template-columns: 25% 50% 25%;
+
+  &__wrapper {
+    width: 100%;
+    grid-area: title;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+    &--title {
+      font-size: 24px;
+      font-weight: bold;
+      width: 322px;
+      height: 113px;
+      text-align: center;
+      margin: 41px 47px 0px 45px;
+    }
+  }
+
+  &__icon1,
+  &__icon2,
+  &__icon3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    line-height: normal;
+
+    h4 {
+      margin-top: 47px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  &__icon1 {
+    grid-area: icon1;
+  }
+
+  &__icon2 {
+    grid-area: icon2;
+  }
+
+  &__icon3 {
+    grid-area: icon3;
+  }
+
+  @media all and (min-width: 900px) {
+    height: 532px;
+    grid-template-rows: 15% 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "title title title" "icon1 icon2 icon3";
+
+    &__icon1,
+    &__icon2,
+    &__icon3 {
+      h4 {
+        width: 208px;
+        height: 23px;
+      }
+
+      p {
+        width: 208px;
+        height: 96px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.delivery {
+  background-color: $color-peach;
+  height: 352px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  line-height: normal;
+  color: $color-white;
+
+  &__icon4 {
+    h4 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  &__button {
+    text-decoration: underline;
+    color: $color-white;
+  }
+
+  @media all and (min-width: 900px) {
+    &__icon4 {
+      h4 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
