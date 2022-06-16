@@ -1,0 +1,73 @@
+.index-header{
+    height:100vh;
+    width: 100%;
+    background: url("../images/header.jpg") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+
+    &__menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 19px;
+
+        &--icon {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            padding: 55px 20px 20px 35px;
+            width: 24px;
+            height: 24px;
+            
+        }
+
+       
+    
+    }
+
+    &__slogan {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 24px;
+        gap: 74px;
+
+       &--button {
+        height: 48px;
+        width: 176px;
+        color: $color-white;
+        font-size: 16px;
+        background-color: $color-spruce;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 12px 24px 12px 24px ;
+
+       }
+        
+    }
+
+    
+
+    @media all and (min-width:900px) {
+     
+
+        &__slogan {
+            font-size: 36px;
+            height: 112px;
+            width: 430px;
+
+            
+            
+
+        }
+
+    }
+    
+}
