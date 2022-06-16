@@ -1,68 +1,140 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="https://kit.fontawesome.com/e653573ea4.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+  <title>Open Spaces</title>
+</head>
+<body>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+  <header class="index-header" id="header">
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <div class="index-header__menu">
+          <i class="fa-solid fa-bars"></i>
+          <img src="./assets/images/logo.png" alt="Logo Open Spaces">
+      </div>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+      <div class="index-header__slogan">
+          <h1>disfruta creando espacios</h1>
+          <a href="#">compra ahora</a>
+      </div>
 
-          </li>
-        </ul>
-      </main>
+  </header>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+  <main class="index-main">
 
-        </small>
-      </footer>
+    <section class="benefits">
 
-    </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
+        <h2>Volverse organizado se siente mejor con OPEN SPACES</h2>
+
+        <article class="benefits__benefit">
+            <img src="./assets/images/icon_1.png" alt="Pictograma de mesa con plantas">
+            <h3>Lo que necesitas</h3>
+            <p>Una linea de productos diseñados para todos tus espacios</p>
+        </article>
+
+       <article class="benefits__benefit">
+           <img src="./assets/images/icon_2.png" alt="Pictograma de reciclaje">
+           <h3>Materias primas sustentables</h3>
+           <p>Todos los productos con mateias primas sustentables</p>
+       </article>
+
+      <article class="benefits__benefit">
+          <img src="./assets/images/icon_3.png" alt="Pictograma de cartel de indicaciones">
+          <h3>Guía</h3>
+          <p>Soporte y asesoramiento para ayudarte con tu objetivo</p>
+      </article>
+
+
+    </section>
+
+    <section class="delivery">
+
+        <article class="benefits__benefit">
+            <img src="./assets/images/icon_4.png" alt="Pictograma de camión de transporte">
+            <h3>Envío gratis garantizado</h3>
+            <p>Envío gratis en compras desde 100</p>
+        </article>
+
+        <a href="#">Comprar ahora</a>
+
+    </section>
+
+    <section class="shop">
+
+        <div>
+            <h4>Disfruta creando espacios</h4>
+            <p>Una línea de productos diseñados para todos tus espacios</p>
+            <a href="#">Comprar ahora</a>
+        </div>
+
+        <div>Background image rollos papel</div>
+
+    </section>
+
+
+  </main>
+
+  <footer class="index-footer">
+
+     
+      <div>
+          <h5>Tienda</h5>
+          <nav>
+              <ul>
+                  <li><a href="https://adalab.es/" target="_blank">Productos</a></li>
+                  <li><a href="https://adalab.es/" target="_blank">Cajoneras</a></li>
+                  <li><a href="https://adalab.es/" target="_blank">Para toda la casa</a></li>
+                  <li><a href="https://adalab.es/" target="_blank">Habitaciones</a></li>
+              </ul>
+          </nav>
+      </div>
+
+      <div>
+          <h5>Nosotros</h5>
+          <nav>
+              <ul>
+                  <li><a href="https://adalab.es/" target="_blank">Nuestra guía</a></li>
+                  <li><a href="https://adalab.es/" target="_blank">Nuestro diseño</a></li>
+                  <li><a href="https://adalab.es/" target="_blank">Nuestra historia</a></li>
+                  <li><a href="https://adalab.es/" target="_blank">Ayuda</a></li>
+              </ul>
+          </nav>
+      </div>
+
+      <div>
+          <h5>Contacto</h5>
+          <nav>
+              <ul>
+
+                  <li><a href="#">ayuda@openspaces.com</a></li>
+                  <li><a href="#">Socios</a></li>
+
+              </ul>
+          </nav>
+      </div>
+
+      <div>
+
+
+          <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          
+
+      </div>
+
+
+      <a href="./index.html#header"><i class="fa-solid fa-arrow-up"></i></a>
+
+
+        
+
+  </footer>
+  
+</body>
 </html>
