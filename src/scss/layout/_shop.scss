@@ -1,0 +1,55 @@
+.shop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+
+  &__text {
+    height: 339px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--wrapper {
+      line-height: normal;
+      margin: 30px;
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__img {
+    height: 50vh;
+    background: url("../images/creando-espacios.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__button {
+    height: 48px;
+    width: 176px;
+    color: $color-white;
+    font-size: 16px;
+    background-color: $color-spruce;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 12px 24px 12px 24px;
+  }
+
+  @media all and (min-width: 1728px) {
+    flex-direction: row;
+    &__text,
+    &__img {
+      width: 50vw;
+    }
+  }
+}
