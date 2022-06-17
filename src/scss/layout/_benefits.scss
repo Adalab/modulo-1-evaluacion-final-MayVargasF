@@ -57,10 +57,30 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "title title title" "icon1 icon2 icon3";
 
+    &__icon1 {
+      padding-left: 70px;
+    }
+
+    &__icon2 {
+      padding: 0px 30px;
+    }
+
+    &__icon3 {
+      padding-right: 70px;
+    }
+  }
+
+  @media all and (min-width: 1728px) {
+    &__title {
+      font-size: 36px;
+    }
+
     &__icon1,
     &__icon2,
     &__icon3 {
-      padding: 0px 28px;
+      h4 {
+        font-size: 24px;
+      }
     }
   }
 }

@@ -35,7 +35,6 @@
   }
 
   &__button {
-    height: 48px;
     width: 176px;
     color: $color-white;
     font-size: 16px;
@@ -43,6 +42,20 @@
     text-align: center;
     box-sizing: border-box;
     padding: 12px 24px 12px 24px;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-spruce;
+    }
+  }
+
+  @media all and (min-width: 900px) {
+    &__text--wrapper {
+      line-height: 45px;
+      h2 {
+        font-size: 30px;
+      }
+    }
   }
 
   @media all and (min-width: 1728px) {
@@ -54,6 +67,16 @@
 
     &__text {
       height: 50vh;
+
+      &--wrapper {
+        h2 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
     }
   }
 }
