@@ -1,5 +1,4 @@
 .index-footer {
-  height: 70vh;
   background-color: $color-spruce;
   color: $color-footer;
   display: flex;
@@ -9,7 +8,8 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 91px;
+    padding-left: 90px;
+    margin-top: 50px;
 
     &--menu {
       padding: 20px;
@@ -28,18 +28,21 @@
     }
 
     &--socialmedia {
-      padding: 20px;
+      padding: 3px 20px 20px 20px;
 
       a {
         color: $color-footer;
         padding: 5px;
+        font-size: 25px;
       }
     }
   }
 
   &__arrow {
     color: $color-footer;
-    display: flex;
-    align-items: right;
+    font-size: 25px;
+    position: relative;
+    left: 200px;
+    padding: 10px 20px 30px 10px;
   }
 }
